@@ -1,0 +1,58 @@
+# Large data directories (hydro output, raw steps)
+giornalieri_DRIP_5crops/
+giornalieri_RAIN_5crops/
+giornalieri_SURF_5crops/
+infiltration_4h/
+SMEW_Output_4Hour_MERIDA/
+SMEW_Output_4Hour_Raw_Steps/
+SURFACE/
+DRIP15-RAINFED610/
+simulazionicondatiaidaclimaticimeridaecropaida/
+
+# Calibration output (large .npz timeseries)
+FULL_*_timeseries_MERGED*.npz
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+Thumbs.db
+.DS_Store
+*.aux.xml
+
+# Large binaries
+*.zip
+*.mat
+
+# Diagnosis plot directories (can regenerate)
+_DIAGNOSIS_PLOTS_FINAL/
+_DIAGNOSIS_SURFACE_LI/
+_DIAGNOSIS_SURFACE_PIXELS/
+WB_TemporalMean_Maps/
+WB_TemporalMean_Maps_NEW/
+Compare_Output/
+
+# Valid mask intermediate files
+valid_masks/
+valid_masks_v2/
+valid_mask_*.npy
+
+# Diagnostic/intermediate PNGs (can regenerate from scripts)
+*.png
+
+# Large NetCDF (soil temp climatology — on cluster)
+Sicily_Soil_Temp_3D*.nc
+
+# Calibration merged output tifs in root (copies exist in alpha_maps/)
+FULL_*_MERGED*.tif
+
+# Claude Code local settings
+.claude/
+
+# Junk files
+import scipy.io as sio*
+
+# Duplicate soil param folder (originals in root)
+soil_param (1)/
